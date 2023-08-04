@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   flex-direction: column;
+  box-sizing: border-box;
+
 }
 
 /* PAGE SECTIONS */
@@ -28,17 +30,17 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+
   /* height: 80px; */
 }
 
 nav {
   font-size: 18px;
   /* text-align: center; */
+  text-align: right;
 }
 
-article {
-  margin-bottom: 60px;
-}
+
 
 .post-header {
   margin-bottom: 40px;
@@ -49,10 +51,9 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
+  box-sizing: border-box;
+
 }
 
 /* SMALLER ELEMENTS */
@@ -66,6 +67,7 @@ h1 {
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
+  margin-bottom: -30px;
 }
 
 h2 {
@@ -83,6 +85,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -135,6 +138,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 body {
@@ -245,7 +249,25 @@ h2::before {
   right: -25px;
 }
 
-/* Resolving conflicts */
+aside{
+  float: right;
+  width: 300px;
+ 
+}
+article {
+ width: 825px;
+  float: left;
+  
+}
+footer{
+ 
+  clear: both;
+}
+
+.container{
+  width:1200px;
+}
+/* Resolving conflicts 
 /* #copyright {
   color: red;
 }
